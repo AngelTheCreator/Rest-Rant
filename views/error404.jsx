@@ -6,9 +6,9 @@ function error404 () {
         <Def>
             <main>
                 <h1>404 Error: Sorry! Your plant is in another website</h1>
-                <img src="images/404.jpeg" alt="Woman hiding begind plants" />
+                <img src="https://images.pexels.com/photos/3629537/pexels-photo-3629537.jpeg" alt="Woman hiding begind plants" />
                 <div className="link">
-                 <a href="Photo by Daria Shevtsova: https://www.pexels.com/photo/person-holding-green-vegetables-3629537/">Photo</a> by <a href="https://www.pexels.com/@daria/">Daria Shevtsova</a> on <a href="https://www.pexels.com/">Pexels</a>
+                 <a href="https://images.pexels.com/photos/3629537/pexels-photo-3629537.jpeg">Photo</a> by <a href="https://www.pexels.com/@daria/">Daria Shevtsova</a> on <a href="https://www.pexels.com/">Pexels</a>
                 </div>
                 <div className="container"> 
                         <div className="center"> 
