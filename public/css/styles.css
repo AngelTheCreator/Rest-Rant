@@ -47,3 +47,40 @@ img {
   cursor: pointer;
   border-radius: 8px;
 }
+
+.btn-primary:hover {
+  background-color: #C9A0FF ;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+}
+
+nav li {
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a {
+  color:white;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  color: #C9A0FF;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #C9A0FF ;
+  padding: 10px;
+  text-align: center;
+}
