@@ -20,6 +20,19 @@ function show (data) {
                         </a>
                     </div>
                 </div>
+                
+                        <div className='container'>
+                    <div className='center'>
+                    <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
+                            Edit
+                        </a>
+                        <form method='POST' action={`/places/${data.id}?_method=DELETE`}>
+                            <button type='submit' className='btn btn-danger'>
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                    </div>
             </main>
         </Def>
     )
