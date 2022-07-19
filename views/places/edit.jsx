@@ -52,7 +52,11 @@ function edit_form (data) {
                         value={data.place.cuisines}
                         required />
                     </div>
-                        <input className='btn btn-primary' type="submit" value="Add Place" />
+                    <div className="container"> 
+                        <div className="center"> 
+                        <input className='btn btn-primary' type="submit" value="Edit" />
+                        </div>
+                        </div>
                     </form>
             </main>
         </Def>
