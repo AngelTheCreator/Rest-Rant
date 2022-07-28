@@ -21,7 +21,11 @@ router.post('/', (req, res) => {
   .catch(err => {
     if (err && err.name == 'ValidationError') {
       let message = 'Validation Error'
-      // TODO: Generate error message(s)
+      for (var field in err.errors) {
+        message += `${field} was ${err.errors[field].value} .`
+        message += `${err.errors[field].message}`
+      }
+      console.log('Validation Error message', message)
       res.render('places/new',  { message })
     } else {
       res.render('error404')
