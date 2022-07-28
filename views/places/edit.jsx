@@ -8,7 +8,7 @@ function edit_form (data) {
                 <h1>Edit Place</h1>
                 <form method="POST" action={`/places/${data.id}?_method=PUT`}>
                     <div className='row' style={{'textAlign': 'center'}}>
-                    <div className='form-group col-sm-6'>
+                    <div className='col-sm-6 col-md-4 col-lg-3'>
                         <label htmlFor="name">Place Name</label>
                         <input 
                         className='form-control' 
@@ -17,7 +17,7 @@ function edit_form (data) {
                         value={data.place.name}
                         required />
                     </div>
-                    <div className='form-group col-sm-6'>
+                    <div className='col-sm-6 col-md-4 col-lg-3'>
                          <label htmlFor="pic">Place Picture</label>
                         <input 
                         className='form-control' 
@@ -26,7 +26,7 @@ function edit_form (data) {
                         name="pic"
                         value={data.place.pic} />
                     </div>
-                    <div className='form-group col-sm-6'>
+                    <div className='col-sm-6 col-md-4 col-lg-3'>
                         <label htmlFor="city">City</label>
                         <input
                          className='form-control'
@@ -34,7 +34,7 @@ function edit_form (data) {
                            name="city" 
                            value={data.place.city}/>
                     </div>
-                    <div className='form-group col-sm-6'>
+                    <div className='col-sm-6 col-md-4 col-lg-3'>
                         <label htmlFor="state">State</label>
                         <input 
                         className='form-control'
@@ -42,8 +42,7 @@ function edit_form (data) {
                           name="state" 
                           value={data.place.state}/>
                     </div>
-                    </div>
-                    <div className='form-group' style={{'textAlign': 'center'}}>
+                    <div className='col-sm-6 col-md-4 col-lg-3' style={{'textAlign': 'center'}}>
                         <label htmlFor="cuisines">Cuisines</label>
                         <input 
                         className='form-control' 
@@ -51,6 +50,7 @@ function edit_form (data) {
                         name="cuisines" 
                         value={data.place.cuisines}
                         required />
+                    </div>
                     </div>
                     <div className="container"> 
                         <div className="center"> 
