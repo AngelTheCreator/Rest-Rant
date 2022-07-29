@@ -1,5 +1,6 @@
 const React = require('react');
-const Def = require('../default')
+const Def = require('../default');
+const NewComment = require('./comment')
 
 function show (data) {
     let comments = (
@@ -12,7 +13,7 @@ function show (data) {
             return (
                 <div className='border'>
                     <div className='border'>
-                    <h3 className='rant'>{c.rant ? 'Rant! 😡 ' : 'Veloved! 💚 '}</h3>
+                    <h3 className='rant'>{c.rant ? 'Miss! 💀 ' : 'Lit! 🔥 '}</h3>
                     </div>
                     <h5>{c.content}</h5>
                     <h5>
@@ -27,8 +28,16 @@ function show (data) {
         <Def>
             <main>
                 <h1>{data.place.name}</h1>
-                <img src={data.place.pic} alt={data.place.name}/>
                 <h4>Serving {data.place.cuisines}</h4>
+                <img src={data.place.pic} alt={data.place.name}/>
+                <h4>{data.place.showEstablished()}</h4>
+                <div className='container'>
+                    <div className='center'>
+                        <a href={data.place.site}>
+                        <button className='btn-primary'>Website</button>
+                        </a>
+                    </div>
+                </div>
                 <div className='container'>
                     <div className='center'>
                     <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
@@ -41,21 +50,13 @@ function show (data) {
                         </form>
                     </div>
                     </div>
-                <h4>{data.place.showEstablished()}</h4>
                 <h2>Rating</h2>
                 <p>Not Rated</p>
                 <hr />
                 <h2>Comments</h2>
                 {comments}
                 <hr />
-                <div className='container'>
-                    <div className='center'>
-                        <a href={data.place.site}>
-                        <button className='btn-primary'>Website</button>
-                        </a>
-                    </div>
-                </div>
-                
+                <NewComment>{data.comments}</NewComment>
             </main>
         </Def>
     )
