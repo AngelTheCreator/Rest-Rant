@@ -3,7 +3,7 @@ const db = require('..//models')
 db.Place.create([{
     name: 'Coffee and Plants',
     city: 'Pasadena',
-    state:'WA',
+    state:'CA',
     cuisines: 'Plant-Based Coffee',
     pic: 'https://images.squarespace-cdn.com/content/v1/5d5f5aa78dcf6e0001e7c2b4/1613422382154-RUBCIG3O0J90IKO99P8W/bluelavender.jpg',
     founded: 2019
